@@ -441,36 +441,44 @@ nav ul li a.active {
 
 .connect-links {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 700px;
 }
 
 .connect-card {
     background-color: white;
     border-radius: 12px;
-    padding: 30px;
-    width: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
     text-decoration: none;
-    border-top: 4px solid var(--neon-purple);
+    border-left: 4px solid var(--neon-purple);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
 }
 
 .connect-card:hover {
-    transform: translateY(-5px);
+    transform: translateX(5px);
 }
 
-.connect-card h3 {
+.connect-card i {
+    font-size: 2rem;
+    width: 40px;
+}
+
+.connect-card-text h3 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
-    color: var(--dark-grey);
-    margin-bottom: 10px;
+    color: var(--black);
+    margin-bottom: 4px;
 }
 
-.connect-card p {
-    font-size: 0.9rem;
+.connect-card-text p {
+    font-size: 0.85rem;
     color: var(--mid-grey);
-    line-height: 1.7;
 }
 
 .message {
