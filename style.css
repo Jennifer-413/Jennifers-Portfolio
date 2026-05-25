@@ -577,33 +577,130 @@ nav ul li a.active {
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column-reverse;
-        text-align: center;
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
     }
 
-    .hero-photo {
-        width: 200px;
-        height: 200px;
-    }
-
-    .hero-buttons {
-        justify-content: center;
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
 @media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column-reverse;
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        padding: 60px 20px;
+        min-height: auto;
         text-align: center;
     }
 
-    .hero-photo {
-        width: 200px;
-        height: 200px;
+    .hero h1 {
+        font-size: 3.5rem;
     }
 
-    .hero-buttons {
-        justify-content: center;
+    .hero-tagline {
+        align-items: center;
+    }
+
+    .hero-image {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* ABOUT ME */
+    .about {
+        padding: 40px 20px;
+    }
+
+    /* CARDS */
+    .cards {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* COURSES */
+    .courses {
+        padding: 40px 20px;
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* GOALS */
+    .goals {
+        padding: 40px 20px;
+    }
+
+    .goals-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* COMING CARDS */
+    .coming {
+        padding: 40px 20px;
+    }
+
+    .coming-cards {
+        flex-direction: column;
+    }
+
+    /* CONNECT */
+    .connect {
+        padding: 40px 20px;
+    }
+
+    .connect-links {
+        max-width: 100%;
+    }
+
+    /* MESSAGE FORM */
+    .message {
+        padding: 40px 20px;
+    }
+
+    /* PAGE HERO */
+    .page-hero {
+        padding: 60px 20px 40px 20px;
+    }
+
+    /* CTA */
+    .cta {
+        padding: 40px 20px;
+    }
+
+    .github {
+        margin: 0 20px 40px 20px;
+        padding: 20px;
     }
 }
